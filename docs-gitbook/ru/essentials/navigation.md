@@ -37,6 +37,7 @@ router.push({ path: 'register', query: { plan: 'private' }})
 const userId = 123
 router.push({ name: 'user', params: { userId }}) // -> /user/123
 router.push({ path: `/user/${userId}` }) // -> /user/123
+
 // Это НЕ БУДЕТ работать
 router.push({ path: '/user', params: { userId }}) // -> /user
 ```
